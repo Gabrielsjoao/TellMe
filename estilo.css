@@ -13,42 +13,31 @@
       padding: 0;
       overflow: hidden;
       background-color: white;
-      border-bottom: 2px solid black;
+      position: fixed; 
+      top: 0; 
+      width: 100%;
+      border-bottom: 2px solid black; 
       
+}
+
+.navba2 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  top: 0;  
 }
 
 .navbar img {
   float: left;
 }
-
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color:black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #BDDDF4;
-}
-
-.active {
-  background-color: #cccccc;
-}
   
   
-  /* Create three unequal columns that floats next to each other */
   .column {
     float: left;
-    padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
-    
+    padding: 5px;
+    height: 1000px; 
   }
   
   /* Left and right column */
@@ -59,17 +48,17 @@ li a:hover:not(.active) {
   /* Middle column */
   .column.middle {
     width: 80%;
+    height: 100%;
     border-left: 2px solid black;
   }
 
   .div.up {
-    background: #f1f1f1;
     width: 100%;
-    height: 30%;
+    height: 15.65%;
   }
 
   .div.middle {
-    background: #f1f1f1;
+    background: #fdfdfd;
     width: 100%;
     height: 20%;
   }
@@ -80,18 +69,15 @@ li a:hover:not(.active) {
     display: table;
     clear: both;
   }
-  
-  /* Style the footer */
-  .footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-  }
-  
+    
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media (max-width: 600px) {
     .column.side, .column.middle {
-      width: 90%;
+      width: 100%;
+    }
+
+    .navbar img {
+      display: none;
     }
   }
 
@@ -99,7 +85,52 @@ li a:hover:not(.active) {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 20%;
-    background-color: #f1f1f1;
+    width: 100%;
   }
 
+  .div.up img:hover:not(.active) {
+   -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+  #IMG {
+    box-shadow: 1px 5px 5px black;
+  }
+
+  #IMG2{
+    width: 4.5%;
+    height: 4.5%;
+    align-items: "center";
+  }
+
+  .post1::before {
+    content: '';
+    background: url(pics/usuario.png);
+    background-size: 50px 50px;
+    float: left;
+    
+    width: 50px;
+    height: 50px;
+  }
+
+  .post2::before {
+    content: '';
+    background: url(pics/history.png);
+    background-size: 50px 50px;
+    float: left;
+    
+    width: 50px;
+    height: 50px;
+  }
+
+  .post3::before {
+    content: '';
+    background: url(pics/nettflixlogo.png);
+    background-size: 60px 50px;
+    float: left;
+    
+    width: 60px;
+    height: 50px;
+  }
